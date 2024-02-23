@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=DGND Pin=R9-1
+Change Component Comment : Designator=R8 Old Comment=23.7K/1608 New Comment=45.3K/1608
+Change Component Comment : Designator=R7 Old Comment=47K/1608 New Comment=25.5K/1608
+Change component parameters: Designator = "R8" ("R8"); Footprint = "RES 1608 (0603_inch)"; UniqueID = "\QXUJPQME" ("\QXUJPQME")
+Change component parameters (AddParameter): Name = "JLCPCB Part Type"; Value = "Extended Part"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part #"; Value = "C304756"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Precision"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size"; Value = "1608"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "45.3K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R7" ("R7"); Footprint = "RES 1608 (0603_inch)"; UniqueID = "\PBBBBIEB" ("\PBBBBIEB")
+Change component parameters (AddParameter): Name = "JLCPCB Part Type"; Value = "Extended Part"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part #"; Value = "C321813"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "0.1W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Precision"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size"; Value = "1608"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "25.5K"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=DGND Pin=R7-1
+Change Net Name : Old Net Name=MCU_LED1_BLUE New Net Name=MCU_LED1_RED
+Change Net Name : Old Net Name=MCU_LED1_RED New Net Name=MCU_LED1_BLUE
+Change Net Name : Old Net Name=MCU_LED2_BLUE New Net Name=MCU_LED2_RED
+Change Net Name : Old Net Name=MCU_LED2_RED New Net Name=MCU_LED2_BLUE

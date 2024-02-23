@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=EXT_ANALOG_SIG_OUT Pin=U5-1
+Added Component: Designator=SB6(SB (Solder-Bridge))
+Added Pin To Net: NetName=EXT_ANALOG_SIG_OUT Pin=SB6-2
+Added Pin To Net: NetName=NetSB6_1 Pin=SB6-1
+Added Pin To Net: NetName=NetSB6_1 Pin=U5-1
+Added Net: Name=NetSB6_1

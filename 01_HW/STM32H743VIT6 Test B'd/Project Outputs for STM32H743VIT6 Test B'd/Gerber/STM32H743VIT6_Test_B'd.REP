@@ -1,0 +1,533 @@
+*************************************************************
+FileName = STM32H743VIT6_Test_B'd.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom
+      File : STM32H743VIT6_Test_B'd.GBL
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D31
+    D36
+    D69
+    D106
+    D107
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+    D118
+    D119
+    D120
+    D121
+    D122
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : STM32H743VIT6_Test_B'd.GPB
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D31
+    D36
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+    D118
+    D119
+    D120
+    D121
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : STM32H743VIT6_Test_B'd.GPT
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+    D118
+    D119
+    D120
+    D121
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : STM32H743VIT6_Test_B'd.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : STM32H743VIT6_Test_B'd.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+*************************************************************
+
+*************************************************************
+Generating : Top Mask
+      File : STM32H743VIT6_Test_B'd.GTS
+
+    Adding Layer      : Top Mask
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+*************************************************************
+
+*************************************************************
+Generating : Inner Layer 2
+      File : STM32H743VIT6_Test_B'd.G2
+
+    Adding Layer      : Inner Layer 2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D69
+    D107
+    D109
+    D111
+    D112
+    D113
+    D116
+    D120
+    D121
+    D122
+*************************************************************
+
+*************************************************************
+Generating : Bottom Mask
+      File : STM32H743VIT6_Test_B'd.GBS
+
+    Adding Layer      : Bottom Mask
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D70
+    D79
+    D90
+    D91
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : STM32H743VIT6_Test_B'd.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D31
+    D36
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : STM32H743VIT6_Test_B'd.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 8
+      File : STM32H743VIT6_Test_B'd.GM8
+
+    Adding Layer      : Mechanical 8
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : STM32H743VIT6_Test_B'd.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D10
+    D14
+    D15
+    D17
+    D18
+    D123
+    D124
+    D125
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : STM32H743VIT6_Test_B'd.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D10
+    D14
+    D17
+    D18
+    D123
+*************************************************************
+
+*************************************************************
+Generating : Inner Layer 1
+      File : STM32H743VIT6_Test_B'd.G1
+
+    Adding Layer      : Inner Layer 1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D69
+    D109
+    D110
+    D111
+    D112
+    D114
+    D116
+*************************************************************
+
+*************************************************************
+Generating : Top
+      File : STM32H743VIT6_Test_B'd.GTL
+
+    Adding Layer      : Top
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D69
+    D105
+    D106
+    D107
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+    D118
+    D119
+    D120
+    D121
+    D122
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : STM32H743VIT6_Test_B'd.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : STM32H743VIT6_Test_B'd.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Courtyard
+      File : STM32H743VIT6_Test_B'd.GM2
+
+    Adding Layer      : Top Courtyard
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Bottom Courtyard
+      File : STM32H743VIT6_Test_B'd.GM3
+
+    Adding Layer      : Bottom Courtyard
+
+
+Used DCodes :
+    D14
+    D123
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : STM32H743VIT6_Test_B'd.GD1
+
+    Adding Drill Pair : Top-Bottom
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D126
+    D127
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : STM32H743VIT6_Test_B'd.GG1
+
+    Adding Drill Pair : Top-Bottom
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D126
+*************************************************************
+

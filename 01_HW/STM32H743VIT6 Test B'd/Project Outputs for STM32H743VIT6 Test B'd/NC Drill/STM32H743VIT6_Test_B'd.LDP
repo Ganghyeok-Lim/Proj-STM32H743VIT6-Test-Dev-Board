@@ -1,0 +1,4 @@
+Layer Pairs Export File for PCB: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\01_HW\STM32H743VIT6 Test B'd\STM32H743VIT6_Test_B'd.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=stm32h743vit6_test_b'd-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=stm32h743vit6_test_b'd-slotholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Rect_Holes|DrillFile=stm32h743vit6_test_b'd-rectholes.txt|DrillLayers=gtl,g1,g2,gbl

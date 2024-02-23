@@ -1,0 +1,7 @@
+Record=TopLevelDocument|FileName=00_Index.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=00_Index.SchDoc|FileName=01_Overview.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=00_Index.SchDoc|FileName=02_Power.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=00_Index.SchDoc|FileName=03_MCU.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=00_Index.SchDoc|FileName=04_LCD.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=00_Index.SchDoc|FileName=05_Sensor_Keypad.SchDoc|SheetNumber=6
+Record=NoMainPathDocument|SourceDocument=00_Index.SchDoc|FileName=06_Communication.SchDoc|SheetNumber=7

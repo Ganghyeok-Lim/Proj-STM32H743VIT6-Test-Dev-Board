@@ -1,0 +1,23 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: STM32H743VIT6_Test_B'd.PcbDoc   2024-02-23  ¿ÀÈÄ 1:55:44
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top to Bottom
+ASCII RoundHoles File : STM32H743VIT6_Test_B'd-RoundHoles.TXT
+ASCII SlotHoles File : STM32H743VIT6_Test_B'd-SlotHoles.TXT
+ASCII RectHoles File : STM32H743VIT6_Test_B'd-RectHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.2mm (8mil)                                              Round             9         PTH        0.00mm (0.00inch)
+T2      0.3mm (12mil)                                             Round             699       PTH        0.00mm (0.00inch)
+T3      0.65mm (26mil)                                            Round             11        PTH        0.00mm (0.00inch)
+T4      0.65mm (26mil)                                            Slot              1         PTH        0.00mm (0.00inch)
+T5      0.714mm (28mil)                                           Round             3         PTH        0.00mm (0.00inch)
+T6      1mm (39mil)                                               Round             95        PTH        0.00mm (0.00inch)
+T7      1.5mm (59mil)                                             Rectangle         3         PTH        0.00mm (0.00inch)
+T8      3mm (118mil)                                              Round             9         PTH        0.00mm (0.00inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              830
+
+Total Processing Time (hh:mm:ss) : 00:00:00
