@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <ThresholdFilter level="INFO"/>
+    <Appenders>
+        <RollingFile name="DEBUGFILE" fileName="C:/Onedrive/04_Development/01_Project/Active/03_STM32H743VIT6_Test_Bd_(Rev.A)/Proj-STM32H743VIT6-Test-Dev-Board/02_FW/.metadata/.ide.log" filePattern="C:/Onedrive/04_Development/01_Project/Active/03_STM32H743VIT6_Test_Bd_(Rev.A)/Proj-STM32H743VIT6-Test-Dev-Board/02_FW/.metadata/.ide.log-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%p] %c{1}:%L - %m%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="50MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="ALL">
+            <AppenderRef ref="DEBUGFILE" />
+        </Root>
+    </Loggers>
+</Configuration>

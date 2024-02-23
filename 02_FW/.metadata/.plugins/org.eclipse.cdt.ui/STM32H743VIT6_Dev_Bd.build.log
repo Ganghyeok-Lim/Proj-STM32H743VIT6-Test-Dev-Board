@@ -1,0 +1,10 @@
+15:44:21 **** Incremental Build of configuration Debug for project STM32H743VIT6_Dev_Bd ****
+make -j16 all 
+arm-none-eabi-size  STM32H743VIT6_Dev_Bd.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10992	     56	   1648	  12696	   3198	STM32H743VIT6_Dev_Bd.elf
+Finished building: default.size.stdout
+ 
+
+15:44:22 Build Finished. 0 errors, 0 warnings. (took 259ms)
+

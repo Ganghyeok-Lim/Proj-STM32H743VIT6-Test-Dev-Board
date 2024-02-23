@@ -4,12 +4,12 @@
 
 # History Folders
 **/History/*
-/01_HW/STM32H743VIT6 Test B'd/History
+/01_HW/STM32H743VIT6 Test B'd/History/
 
 # Project Logs
 Project\ Logs*/
 Project Logs for*
-/01_HW/STM32H743VIT6 Test B'd/Project Logs for STM32H743VIT6 Test B'd
+/01_HW/STM32H743VIT6 Test B'd/Project Logs for STM32H743VIT6 Test B'd/
 
 # Project Outputs
 Project\ Outputs*/
