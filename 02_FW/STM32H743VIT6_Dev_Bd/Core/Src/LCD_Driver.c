@@ -114,3 +114,20 @@ void LCD_String(uint8_t command, uint8_t* string)
         string++;
     }
 }
+
+
+void LCD_Cursor(uint8_t row, uint8_t col)
+{
+	uint8_t temp;
+
+	if(row == 1)
+	{
+		temp = 0x80 + (col-1);
+		LCD_Command(temp);
+	}
+	else if(row == 2)
+	{
+		temp = 0xC0 + (col-1);
+		LCD_Command(temp);
+	}
+}

@@ -1,0 +1,28 @@
+/*
+ * Keypad_driver.h
+ *
+ *  Created on: Feb 25, 2024
+ *      Author: Ganghyeok Lim
+ */
+
+#ifndef INC_KEYPAD_DRIVER_H_
+#define INC_KEYPAD_DRIVER_H_
+
+#include "main.h"
+
+#define KEYPAD_ROW1			1
+#define KEYPAD_ROW2			2
+#define KEYPAD_ROW3			3
+#define KEYPAD_ROW4			4
+
+#define KEYPAD_COL1			1
+#define KEYPAD_COL2			2
+#define KEYPAD_COL3			3
+
+
+
+
+
+
+
+#endif /* INC_KEYPAD_DRIVER_H_ */

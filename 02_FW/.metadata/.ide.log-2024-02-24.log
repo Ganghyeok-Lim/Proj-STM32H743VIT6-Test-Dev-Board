@@ -1,0 +1,123 @@
+2024-02-25 00:04:12,283 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-02-25 00:04:13,046 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 770182952 Bytes (1073741824)
+2024-02-25 00:04:13,115 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 796397352 Bytes (1073741824)
+2024-02-25 00:04:13,772 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 687762016 Bytes (1073741824)
+2024-02-25 00:04:14,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7H7
+2024-02-25 00:04:14,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8H7
+2024-02-25 00:04:14,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-02-25 00:04:14,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-02-25 00:04:14,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-02-25 00:04:14,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DEBUG
+2024-02-25 00:04:14,110 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-02-25 00:04:14,110 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-02-25 00:04:14,302 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\license.tmp_save
+2024-02-25 00:04:14,425 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\license.tmp
+2024-02-25 00:04:14,513 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\gpio.tmp_save
+2024-02-25 00:04:14,619 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\gpio.tmp
+2024-02-25 00:04:14,702 [WARN] IPConfigManager:99 - WARNING: Missing Config File for DEBUG ip!!
+2024-02-25 00:04:14,923 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\cortex.tmp_save
+2024-02-25 00:04:15,004 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\cortex.tmp
+2024-02-25 00:04:15,029 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_it.c_save
+2024-02-25 00:04:15,176 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_it.c
+2024-02-25 00:04:15,192 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_it.h_save
+2024-02-25 00:04:15,247 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_it.h
+2024-02-25 00:04:15,376 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_hal_msp.c_save
+2024-02-25 00:04:15,456 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_hal_msp.c
+2024-02-25 00:04:15,460 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\system.tmp_save
+2024-02-25 00:04:15,517 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\system.tmp
+2024-02-25 00:04:15,534 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_hal_conf.h_save
+2024-02-25 00:04:15,622 [INFO] CodeEngine:335 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_hal_conf.h
+2024-02-25 00:04:15,649 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-02-25 00:04:15,650 [WARN] CodeGenerator:3939 - IP not found : null
+2024-02-25 00:04:15,665 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\main.h_save
+2024-02-25 00:04:15,747 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\main.h
+2024-02-25 00:04:15,759 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\main.c_save
+2024-02-25 00:04:15,875 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\main.c
+2024-02-25 00:04:16,275 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 141mS.
+2024-02-25 00:04:16,278 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-02-25 00:04:16,447 [INFO] ConfigFileManager:1495 - The Die is : DIE450
+2024-02-25 00:04:17,670 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1393mS.
+2024-02-25 00:04:17,671 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-02-25 00:04:17,675 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-02-25 00:04:57,753 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-02-25 00:04:58,018 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 713915480 Bytes (1073741824)
+2024-02-25 00:04:58,084 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 739391008 Bytes (1073741824)
+2024-02-25 00:04:58,686 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 723711464 Bytes (1073741824)
+2024-02-25 00:04:59,001 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7H7
+2024-02-25 00:04:59,001 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8H7
+2024-02-25 00:04:59,001 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-02-25 00:04:59,001 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-02-25 00:04:59,001 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-02-25 00:04:59,001 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DEBUG
+2024-02-25 00:04:59,001 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-02-25 00:04:59,002 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-02-25 00:04:59,126 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\license.tmp_save
+2024-02-25 00:04:59,210 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\license.tmp
+2024-02-25 00:04:59,266 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\gpio.tmp_save
+2024-02-25 00:04:59,332 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\gpio.tmp
+2024-02-25 00:04:59,399 [WARN] IPConfigManager:99 - WARNING: Missing Config File for DEBUG ip!!
+2024-02-25 00:04:59,627 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\cortex.tmp_save
+2024-02-25 00:04:59,697 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\cortex.tmp
+2024-02-25 00:04:59,719 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_it.c_save
+2024-02-25 00:04:59,854 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_it.c
+2024-02-25 00:04:59,869 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_it.h_save
+2024-02-25 00:04:59,917 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_it.h
+2024-02-25 00:05:00,035 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_hal_msp.c_save
+2024-02-25 00:05:00,104 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_hal_msp.c
+2024-02-25 00:05:00,107 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\system.tmp_save
+2024-02-25 00:05:00,150 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\system.tmp
+2024-02-25 00:05:00,166 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_hal_conf.h_save
+2024-02-25 00:05:00,241 [INFO] CodeEngine:335 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_hal_conf.h
+2024-02-25 00:05:00,265 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-02-25 00:05:00,266 [WARN] CodeGenerator:3939 - IP not found : null
+2024-02-25 00:05:00,278 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\main.h_save
+2024-02-25 00:05:00,349 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\main.h
+2024-02-25 00:05:00,360 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\main.c_save
+2024-02-25 00:05:00,458 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\main.c
+2024-02-25 00:05:00,844 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 151mS.
+2024-02-25 00:05:00,848 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-02-25 00:05:01,005 [INFO] ConfigFileManager:1495 - The Die is : DIE450
+2024-02-25 00:05:02,028 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1180mS.
+2024-02-25 00:05:02,030 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-02-25 00:05:02,037 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.
+2024-02-25 00:07:38,210 [INFO] Gpio:277 - dependency for GPIO [DEBUG, RCC]
+2024-02-25 00:07:57,574 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 914245336 Bytes (1073741824)
+2024-02-25 00:07:57,651 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 706638416 Bytes (1073741824)
+2024-02-25 00:07:58,306 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 831945296 Bytes (1073741824)
+2024-02-25 00:07:58,603 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7H7
+2024-02-25 00:07:58,604 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8H7
+2024-02-25 00:07:58,604 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-02-25 00:07:58,604 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-02-25 00:07:58,604 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-02-25 00:07:58,604 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DEBUG
+2024-02-25 00:07:58,604 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-02-25 00:07:58,605 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.10.0.202311202037\\db\
+2024-02-25 00:07:58,743 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\license.tmp_save
+2024-02-25 00:07:58,806 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\license.tmp
+2024-02-25 00:07:58,896 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\gpio.tmp_save
+2024-02-25 00:07:58,968 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\gpio.tmp
+2024-02-25 00:07:59,027 [WARN] IPConfigManager:99 - WARNING: Missing Config File for DEBUG ip!!
+2024-02-25 00:07:59,268 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\cortex.tmp_save
+2024-02-25 00:07:59,337 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\cortex.tmp
+2024-02-25 00:07:59,369 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_it.c_save
+2024-02-25 00:07:59,450 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_it.c
+2024-02-25 00:07:59,464 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_it.h_save
+2024-02-25 00:07:59,519 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_it.h
+2024-02-25 00:07:59,633 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_hal_msp.c_save
+2024-02-25 00:07:59,702 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\stm32h7xx_hal_msp.c
+2024-02-25 00:07:59,706 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\system.tmp_save
+2024-02-25 00:07:59,749 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\MXTmpFiles\system.tmp
+2024-02-25 00:07:59,764 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_hal_conf.h_save
+2024-02-25 00:07:59,836 [INFO] CodeEngine:335 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\stm32h7xx_hal_conf.h
+2024-02-25 00:07:59,859 [WARN] IPConfigManager:3440 - IP not found : TIM
+2024-02-25 00:07:59,859 [WARN] CodeGenerator:3939 - IP not found : null
+2024-02-25 00:07:59,872 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\main.h_save
+2024-02-25 00:07:59,930 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Inc\main.h
+2024-02-25 00:07:59,943 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\main.c_save
+2024-02-25 00:08:00,035 [INFO] CodeEngine:279 - Generated code: C:\Onedrive\04_Development\01_Project\Active\03_STM32H743VIT6_Test_Bd_(Rev.A)\Proj-STM32H743VIT6-Test-Dev-Board\02_FW\STM32H743VIT6_Dev_Bd\Core\Src\main.c
+2024-02-25 00:08:00,402 [INFO] ProjectBuilder:3076 - Time for Copy HAL[1] : 144mS.
+2024-02-25 00:08:00,407 [INFO] ProjectBuilder:4485 - Project Generator version: 4.2.0-B44
+2024-02-25 00:08:00,585 [INFO] ConfigFileManager:1495 - The Die is : DIE450
+2024-02-25 00:08:01,667 [INFO] ProjectBuilder:4747 - Time for Generating toolchain IDE Files: 1260mS.
+2024-02-25 00:08:01,668 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 1mS.
+2024-02-25 00:08:01,672 [INFO] ProjectBuilder:2947 - Time for Copy CMSIS : 0mS.

@@ -1,0 +1,123 @@
+/*
+ * Keypad_driver.c
+ *
+ *  Created on: Feb 25, 2024
+ *      Author: Ganghyeok Lim
+ */
+
+#include "Keypad_driver.h"
+
+
+uint8_t Keypad_value = '#';
+uint8_t Keypad_Data[32] = {0,};
+uint16_t Keypad_press_time = 0;
+uint8_t Keypad_pressed_flag = CLEAR;
+
+uint16_t Keypad_time_count = 0;
+
+uint8_t Keypad_row_drive_status = ON;
+uint8_t Keypad_cur_row, Keypad_cur_col;
+
+uint8_t Keypad_read_enable = OFF;
+
+
+
+uint8_t Keypad_Get_Value(uint8_t row, uint8_t col)
+{
+	uint8_t ret_value;
+
+	switch(row)
+	{
+		case KEYPAD_ROW1 :
+							if(col == KEYPAD_COL1)			ret_value = '1';
+							else if(col == KEYPAD_COL2)		ret_value = '2';
+							else if(col == KEYPAD_COL3)		ret_value = '3';
+							break;
+
+		case KEYPAD_ROW2 :
+							if(col == KEYPAD_COL1)			ret_value = '4';
+							else if(col == KEYPAD_COL2)		ret_value = '5';
+							else if(col == KEYPAD_COL3)		ret_value = '6';
+							break;
+
+		case KEYPAD_ROW3 :
+							if(col == KEYPAD_COL1)			ret_value = '7';
+							else if(col == KEYPAD_COL2)		ret_value = '8';
+							else if(col == KEYPAD_COL3)		ret_value = '9';
+							break;
+
+		case KEYPAD_ROW4 :
+							if(col == KEYPAD_COL1)			ret_value = '*';
+							else if(col == KEYPAD_COL2)		ret_value = '0';
+							else if(col == KEYPAD_COL3)		ret_value = '#';
+							break;
+
+		default :
+							ret_value = 'X';	// Error
+							break;
+	}
+
+	return ret_value;
+}
+
+
+void Keypad_Save_Value(uint8_t value)
+{
+	static uint8_t row_num = 0;
+	static uint8_t col_num = 0;
+
+	Keypad_Data[row_num][col_num] =
+
+}
+
+
+void Keypad_Row_Drive(void)
+{
+	static uint8_t Keypad_drive_row_num = KEYPAD_ROW1;
+
+	switch(Keypad_drive_row_num)
+	{
+		case KEYPAD_ROW1 :
+			Keypad_cur_row = KEYPAD_ROW1;
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW1_GPIO_Port, MCU_KEYPAD_ROW1_Pin, LOW);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW2_GPIO_Port, MCU_KEYPAD_ROW2_Pin, HIGH);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW3_GPIO_Port, MCU_KEYPAD_ROW3_Pin, HIGH);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW4_GPIO_Port, MCU_KEYPAD_ROW4_Pin, HIGH);
+
+			Keypad_drive_row_num = KEYPAD_ROW2;
+			break;
+
+		case KEYPAD_ROW2 :
+			Keypad_cur_row = KEYPAD_ROW2;
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW1_GPIO_Port, MCU_KEYPAD_ROW1_Pin, HIGH);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW2_GPIO_Port, MCU_KEYPAD_ROW2_Pin, LOW);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW3_GPIO_Port, MCU_KEYPAD_ROW3_Pin, HIGH);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW4_GPIO_Port, MCU_KEYPAD_ROW4_Pin, HIGH);
+
+			Keypad_drive_row_num = KEYPAD_ROW3;
+			break;
+
+		case KEYPAD_ROW3 :
+			Keypad_cur_row = KEYPAD_ROW3;
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW1_GPIO_Port, MCU_KEYPAD_ROW1_Pin, HIGH);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW2_GPIO_Port, MCU_KEYPAD_ROW2_Pin, HIGH);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW3_GPIO_Port, MCU_KEYPAD_ROW3_Pin, LOW);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW4_GPIO_Port, MCU_KEYPAD_ROW4_Pin, HIGH);
+
+			Keypad_drive_row_num = KEYPAD_ROW4;
+			break;
+
+		case KEYPAD_ROW4 :
+			Keypad_cur_row = KEYPAD_ROW4;
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW1_GPIO_Port, MCU_KEYPAD_ROW1_Pin, HIGH);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW2_GPIO_Port, MCU_KEYPAD_ROW2_Pin, HIGH);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW3_GPIO_Port, MCU_KEYPAD_ROW3_Pin, HIGH);
+			HAL_GPIO_WritePin(MCU_KEYPAD_ROW4_GPIO_Port, MCU_KEYPAD_ROW4_Pin, LOW);
+
+			Keypad_drive_row_num = KEYPAD_ROW1;
+			break;
+
+		default :
+			break;
+	}
+}

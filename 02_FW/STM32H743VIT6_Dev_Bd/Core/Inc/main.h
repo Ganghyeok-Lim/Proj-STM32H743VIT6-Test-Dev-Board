@@ -63,6 +63,12 @@ void Initialize_LCD(void);
 void LCD_Command(uint8_t command);
 void LCD_Data(uint8_t data);
 void LCD_String(uint8_t command, uint8_t* string);
+void LCD_Cursor(uint8_t row, uint8_t col);
+
+// About Keypad
+void Keypad_Save_Value(uint8_t value);
+uint8_t Keypad_Get_Value(uint8_t row, uint8_t col);
+void Keypad_Row_Drive(void);
 
 /* USER CODE END EFP */
 
@@ -85,6 +91,23 @@ void LCD_String(uint8_t command, uint8_t* string);
 #define MCU_CHAR_LCD_RW_GPIO_Port GPIOD
 #define MCU_CHAR_LCD_E_Pin GPIO_PIN_10
 #define MCU_CHAR_LCD_E_GPIO_Port GPIOD
+#define MCU_KEYPAD_ROW1_Pin GPIO_PIN_6
+#define MCU_KEYPAD_ROW1_GPIO_Port GPIOC
+#define MCU_KEYPAD_ROW2_Pin GPIO_PIN_7
+#define MCU_KEYPAD_ROW2_GPIO_Port GPIOC
+#define MCU_KEYPAD_ROW3_Pin GPIO_PIN_8
+#define MCU_KEYPAD_ROW3_GPIO_Port GPIOC
+#define MCU_KEYPAD_ROW4_Pin GPIO_PIN_9
+#define MCU_KEYPAD_ROW4_GPIO_Port GPIOC
+#define MCU_KEYPAD_COL1_Pin GPIO_PIN_10
+#define MCU_KEYPAD_COL1_GPIO_Port GPIOC
+#define MCU_KEYPAD_COL1_EXTI_IRQn EXTI15_10_IRQn
+#define MCU_KEYPAD_COL2_Pin GPIO_PIN_11
+#define MCU_KEYPAD_COL2_GPIO_Port GPIOC
+#define MCU_KEYPAD_COL2_EXTI_IRQn EXTI15_10_IRQn
+#define MCU_KEYPAD_COL3_Pin GPIO_PIN_12
+#define MCU_KEYPAD_COL3_GPIO_Port GPIOC
+#define MCU_KEYPAD_COL3_EXTI_IRQn EXTI15_10_IRQn
 #define MCU_CHAR_LCD_DATA0_Pin GPIO_PIN_0
 #define MCU_CHAR_LCD_DATA0_GPIO_Port GPIOD
 #define MCU_CHAR_LCD_DATA1_Pin GPIO_PIN_1
@@ -109,8 +132,28 @@ void LCD_String(uint8_t command, uint8_t* string);
 #define MCU_LED2_GREEN_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
+#define FLAG				uint8_t
 #define HIGH                (1U)
 #define LOW                 (0U)
+//#define SET					(1U)
+//#define RESET				(0U)
+#define CLEAR				(0U)
+#define ON					(1U)
+#define OFF					(0U)
+#define LOCK				(0U)
+#define RELEASE				(1U)
+
+#define KEY_PRESSED			(0U)
+#define KEY_RELEASED		(1U)
+
+// Keypad
+#define KEYPAD_ROW1			1
+#define KEYPAD_ROW2			2
+#define KEYPAD_ROW3			3
+#define KEYPAD_ROW4			4
+#define KEYPAD_COL1			1
+#define KEYPAD_COL2			2
+#define KEYPAD_COL3			3
 
 /* USER CODE END Private defines */
 

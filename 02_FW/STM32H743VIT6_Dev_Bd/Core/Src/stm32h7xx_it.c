@@ -31,6 +31,10 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define KEYPAD_ROW1		1
+#define KEYPAD_ROW2		2
+#define KEYPAD_ROW3		3
+#define KEYPAD_ROW4		4
 
 /* USER CODE END PD */
 
@@ -41,6 +45,9 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
+
+
+
 
 /* USER CODE END PV */
 
@@ -55,8 +62,15 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-
+extern TIM_HandleTypeDef htim6;
 /* USER CODE BEGIN EV */
+extern uint8_t Keypad_value;
+extern uint8_t Keypad_Data[32];
+extern uint8_t Keypad_cur_row, Keypad_cur_col;
+extern uint8_t Keypad_row_drive_status;
+extern uint16_t Keypad_time_count;
+extern uint16_t Keypad_press_time;
+extern uint8_t Keypad_read_enable;
 
 /* USER CODE END EV */
 
@@ -226,6 +240,36 @@ void EXTI1_IRQHandler(void)
   /* USER CODE END EXTI1_IRQn 1 */
 }
 
+/**
+  * @brief This function handles EXTI line[15:10] interrupts.
+  */
+void EXTI15_10_IRQHandler(void)
+{
+  /* USER CODE BEGIN EXTI15_10_IRQn 0 */
+
+  /* USER CODE END EXTI15_10_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(MCU_KEYPAD_COL1_Pin);
+  HAL_GPIO_EXTI_IRQHandler(MCU_KEYPAD_COL2_Pin);
+  HAL_GPIO_EXTI_IRQHandler(MCU_KEYPAD_COL3_Pin);
+  /* USER CODE BEGIN EXTI15_10_IRQn 1 */
+
+  /* USER CODE END EXTI15_10_IRQn 1 */
+}
+
+/**
+  * @brief This function handles TIM6 global interrupt, DAC1_CH1 and DAC1_CH2 underrun error interrupts.
+  */
+void TIM6_DAC_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM6_DAC_IRQn 0 */
+
+  /* USER CODE END TIM6_DAC_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim6);
+  /* USER CODE BEGIN TIM6_DAC_IRQn 1 */
+
+  /* USER CODE END TIM6_DAC_IRQn 1 */
+}
+
 /* USER CODE BEGIN 1 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
@@ -239,5 +283,95 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		HAL_GPIO_TogglePin(MCU_LED2_RED_GPIO_Port, MCU_LED2_RED_Pin);
 		HAL_GPIO_TogglePin(MCU_LED2_GREEN_GPIO_Port, MCU_LED2_GREEN_Pin);
 	}
+
+	if((GPIO_Pin == MCU_KEYPAD_COL1_Pin) || (GPIO_Pin == MCU_KEYPAD_COL2_Pin) || (GPIO_Pin == MCU_KEYPAD_COL3_Pin))
+	{
+		if(GPIO_Pin == MCU_KEYPAD_COL1_Pin)
+		{
+			Keypad_cur_col = KEYPAD_COL1;
+			Keypad_value = Keypad_Get_Value(Keypad_cur_row, Keypad_cur_col);
+		}
+		else if(GPIO_Pin == MCU_KEYPAD_COL2_Pin)
+		{
+			Keypad_cur_col = KEYPAD_COL2;
+			Keypad_value = Keypad_Get_Value(Keypad_cur_row, Keypad_cur_col);
+		}
+		else if(GPIO_Pin == MCU_KEYPAD_COL3_Pin)
+		{
+			Keypad_cur_col = KEYPAD_COL3;
+			Keypad_value = Keypad_Get_Value(Keypad_cur_row, Keypad_cur_col);
+		}
+	}
 }
+
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	static uint8_t TIM6_state = 1;
+	static uint16_t TIM6_time_cnt = 0;
+
+	if(htim->Instance == TIM6)
+	{
+		// TIM6 Interrupt is called every 10ms
+		switch(TIM6_state)
+		{
+			case 1 :
+						if((HAL_GPIO_ReadPin(MCU_KEYPAD_COL1_GPIO_Port, MCU_KEYPAD_COL1_Pin) == KEY_PRESSED) ||
+						(HAL_GPIO_ReadPin(MCU_KEYPAD_COL2_GPIO_Port, MCU_KEYPAD_COL2_Pin) == KEY_PRESSED) ||
+						(HAL_GPIO_ReadPin(MCU_KEYPAD_COL3_GPIO_Port, MCU_KEYPAD_COL3_Pin) == KEY_PRESSED))
+						{
+							TIM6_state = 2;
+						}
+						else
+						{
+							Keypad_Row_Drive();
+						}
+
+						break;
+
+			case 2 :
+						if(TIM6_time_cnt < 200)
+						{
+							TIM6_time_cnt += 10;
+						}
+						else
+						{
+							TIM6_time_cnt = 0;
+							Keypad_Save_Value(Keypad_value);
+
+							TIM6_state = 3;
+						}
+
+						break;
+
+			case 3 :
+						if((HAL_GPIO_ReadPin(MCU_KEYPAD_COL1_GPIO_Port, MCU_KEYPAD_COL1_Pin) == KEY_RELEASED) ||
+						(HAL_GPIO_ReadPin(MCU_KEYPAD_COL2_GPIO_Port, MCU_KEYPAD_COL2_Pin) == KEY_RELEASED) ||
+						(HAL_GPIO_ReadPin(MCU_KEYPAD_COL3_GPIO_Port, MCU_KEYPAD_COL3_Pin) == KEY_RELEASED))
+						{
+							TIM6_state = 4;
+						}
+
+						break;
+
+			case 4 :
+						if(TIM6_time_cnt < 200)
+						{
+							TIM6_time_cnt += 10;
+						}
+						else
+						{
+							TIM6_time_cnt = 0;
+							TIM6_state = 1;
+						}
+
+						break;
+
+			default :
+
+						break;
+		}
+	}
+}
+
 /* USER CODE END 1 */

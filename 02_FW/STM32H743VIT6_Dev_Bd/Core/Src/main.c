@@ -42,16 +42,22 @@
 /* Private variables ---------------------------------------------------------*/
 
 TIM_HandleTypeDef htim1;
+TIM_HandleTypeDef htim6;
 
 /* USER CODE BEGIN PV */
-uint8_t str1[] = "STM32H743VIT6";
-uint8_t str2[] = "Dev B'd (Rev.B)";
+uint8_t str1[] = "Live like Woong";
+uint8_t str2[] = "     by Minjung";
+
+extern uint8_t Keypad_value;
+extern uint8_t Keypad_read_enable;
+extern uint8_t Keypad_Data[32];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_TIM1_Init(void);
+static void MX_TIM6_Init(void);
 /* USER CODE BEGIN PFP */
 void Delay_us(uint16_t time_us);
 /* USER CODE END PFP */
@@ -90,12 +96,23 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_TIM1_Init();
+  MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
 	HAL_TIM_Base_Start(&htim1);
+	HAL_TIM_Base_Start_IT(&htim6);
+
+	HAL_GPIO_WritePin(MCU_KEYPAD_ROW1_GPIO_Port, MCU_KEYPAD_ROW1_Pin, LOW);
 
 	HAL_Delay(10);
 	Initialize_LCD();
 	HAL_Delay(100);
+
+	memset(Keypad_Data, 0x20, sizeof(Keypad_Data));
+
+
+
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -105,10 +122,33 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	LCD_String(0x80, str1);
-	HAL_Delay(10);
-	LCD_String(0xC0, str2);
-	HAL_Delay(200);
+//	LCD_String(0x80, str1);
+//	HAL_Delay(10);
+//	LCD_String(0xC0, str2);
+//	HAL_Delay(200);
+
+//	LCD_Cursor(1,1);
+//	LCD_Data(Keypad_value);
+//	HAL_Delay(100);
+
+
+	  for(int i = 0; i < 32; i++)
+	  {
+		  if(i < 16)
+		  {
+			  LCD_Cursor(1,i+1);
+			  LCD_Data(Keypad_Data[i]);
+			  HAL_Delay(1);
+		  }
+		  else
+		  {
+			  LCD_Cursor(2,i-15);
+			  LCD_Data(Keypad_Data[i]);
+			  HAL_Delay(1);
+		  }
+	  }
+
+	  HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }
@@ -224,6 +264,44 @@ static void MX_TIM1_Init(void)
 }
 
 /**
+  * @brief TIM6 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM6_Init(void)
+{
+
+  /* USER CODE BEGIN TIM6_Init 0 */
+
+  /* USER CODE END TIM6_Init 0 */
+
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM6_Init 1 */
+
+  /* USER CODE END TIM6_Init 1 */
+  htim6.Instance = TIM6;
+  htim6.Init.Prescaler = (120-1);
+  htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim6.Init.Period = (10000-1);
+  htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim6, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM6_Init 2 */
+
+  /* USER CODE END TIM6_Init 2 */
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -250,9 +328,12 @@ static void MX_GPIO_Init(void)
                           |MCU_CHAR_LCD_DATA1_Pin|MCU_CHAR_LCD_DATA2_Pin|MCU_CHAR_LCD_DATA3_Pin|MCU_CHAR_LCD_DATA4_Pin
                           |MCU_CHAR_LCD_DATA5_Pin|MCU_CHAR_LCD_DATA6_Pin|MCU_CHAR_LCD_DATA7_Pin, GPIO_PIN_RESET);
 
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOC, MCU_KEYPAD_ROW1_Pin|MCU_KEYPAD_ROW2_Pin|MCU_KEYPAD_ROW3_Pin|MCU_KEYPAD_ROW4_Pin, GPIO_PIN_SET);
+
   /*Configure GPIO pins : MCU_TACT_SW1_Pin MCU_TACT_SW2_Pin */
   GPIO_InitStruct.Pin = MCU_TACT_SW1_Pin|MCU_TACT_SW2_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
@@ -276,12 +357,28 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
+  /*Configure GPIO pins : MCU_KEYPAD_ROW1_Pin MCU_KEYPAD_ROW2_Pin MCU_KEYPAD_ROW3_Pin MCU_KEYPAD_ROW4_Pin */
+  GPIO_InitStruct.Pin = MCU_KEYPAD_ROW1_Pin|MCU_KEYPAD_ROW2_Pin|MCU_KEYPAD_ROW3_Pin|MCU_KEYPAD_ROW4_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : MCU_KEYPAD_COL1_Pin MCU_KEYPAD_COL2_Pin MCU_KEYPAD_COL3_Pin */
+  GPIO_InitStruct.Pin = MCU_KEYPAD_COL1_Pin|MCU_KEYPAD_COL2_Pin|MCU_KEYPAD_COL3_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI0_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI0_IRQn);
 
   HAL_NVIC_SetPriority(EXTI1_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI1_IRQn);
+
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

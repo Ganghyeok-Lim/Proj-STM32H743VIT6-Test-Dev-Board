@@ -2,3 +2,4 @@
 ../Core/Src/LCD_Driver.c:43:6:LCD_Command	1
 ../Core/Src/LCD_Driver.c:75:6:LCD_Data	1
 ../Core/Src/LCD_Driver.c:107:6:LCD_String	2
+../Core/Src/LCD_Driver.c:119:6:LCD_Cursor	3
