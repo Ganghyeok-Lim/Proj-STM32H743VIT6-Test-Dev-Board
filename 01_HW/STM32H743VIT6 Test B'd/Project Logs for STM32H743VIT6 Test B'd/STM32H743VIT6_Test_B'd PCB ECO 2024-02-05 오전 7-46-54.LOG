@@ -1,5 +1,0 @@
-Added Component: Designator=D1(DIO DO-214AC (SMA))
-Add component (AddParameter): Name = "JLCPCB Part Type"; Value = "Basic Part"; VariantName = "[No Variations]"
-Add component (AddParameter): Name = "LCSC Part #"; Value = "C8678"; VariantName = "[No Variations]"
-Added Pin To Net: NetName=NetD1_1 Pin=D1-1
-Added Pin To Net: NetName=P24VS Pin=D1-2
